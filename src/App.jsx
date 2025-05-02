@@ -14,31 +14,30 @@ import UserList from './Components/Pages/User/UserList/UserList'
 import WebAnalytics from './Components/Pages/WebAnalytics/WebAnalytics'
 import ResetPassword from './Components/Login/ResetPassword'
 import NewPassword from './Components/Login/NewPassw'
-import WebsiteManager from './Components/Pages/WebsiteManager/WebsiteManager'
-
+import WebsiteManager from './Components/Pages/WebsiteManager/WebsiteManager' 
 
 function App() {
-  
+
 
   return (
     <>
-     <BrowserRouter>
-      <Header variant="default"/>
+      <BrowserRouter>
+        <Header variant="default" />
 
-      <Routes>
-          <Route path='/' element={<Login/>}/>
-          <Route path='/dashboard' element={<Dashboard/>}/>
-          <Route path='/user-account' element={<User/>}/>
-          <Route path='/add-content' element={<Content/>}/>
-          <Route path='/Course-list' element={<NewCourse/>}/>
-          <Route path='/add-Course' element={<CourseFormContainer/>}/>
-          <Route path='/user-list' element={<UserList/>}/>
-          <Route path='/website-analytics' element={<WebAnalytics/>}/>
-          <Route path='/reset-password' element={<ResetPassword/>}/>
-          <Route path='/NewPassword' element={<NewPassword/>}/>
-          <Route path='/website-pages' element={<WebsiteManager/>}/>
-      </Routes>
-     </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/user-account' element={<User />} />
+          <Route path='/add-content' element={<Content />} />
+          <Route path='/Course-list' element={<NewCourse />} />
+          <Route path='/add-Course' element={<CourseFormContainer />} />
+          <Route path='/user-list' element={<UserList />} />
+          <Route path='/website-analytics' element={<WebAnalytics />} />
+          <Route path='/reset-password' element={<ResetPassword />} />
+          <Route path='/NewPassword' element={<NewPassword />} />
+          <Route path='/website-pages' element={<WebsiteManager />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
